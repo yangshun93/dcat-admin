@@ -85,7 +85,7 @@ return [
         'aliyun' => [
             'driver'     => 'oss',
             'access_id'  => '',
-            'access_key' =>  ''),
+            'access_key' =>  '',
             'bucket'     => 'laravel-admin',
             'endpoint'   => 'oss-cn-shanghai.aliyuncs.com',
         ],

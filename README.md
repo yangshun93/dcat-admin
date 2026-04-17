@@ -29,7 +29,7 @@
 > 尽管我已在**实际生产项目**中使用过该项目，但我无法保证所做的修改和调整绝对无误。因此，在将其应用于你的生产项目环境时，请务必保持谨慎，充分测试后再使用。
 > 
 > 安装方法：
-> `composer require printnow/laravel-admin:@dev`
+> `composer require benevolence/laravel-admin`
 
 ---
 

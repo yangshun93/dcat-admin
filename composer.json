@@ -1,0 +1,63 @@
+{
+    "name": "benevolence/laravel-admin",
+    "description": "Dcat admin 升级版 / 支持 Laravel 12, PHP 版本限制 >= 8.1（支持 PHP 8.4）",
+    "type": "library",
+    "keywords": [
+        "dcat",
+        "laravel",
+        "admin",
+        "grid",
+        "form",
+        "laravel admin",
+        "dcat admin"
+    ],
+    "homepage": "https://github.com/yangshun93/dcat-admin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "benevolence",
+            "email": "178556289@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "laravel/framework": "~10.0|~11.0|~12.0",
+        "spatie/eloquent-sortable": "4.*",
+        "doctrine/dbal": "~3.0|~4.0",
+        "ext-dom": "*",
+        "ext-fileinfo": "*",
+        "ext-zip": "*",
+        "ext-libxml": "*"
+    },
+    "require-dev": {
+        "laravel/dusk": "^8.3",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.0",
+        "fakerphp/faker": "^1.24",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dcat\\Admin\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\AdminServiceProvider"
+            ]
+        }
+    }
+}
